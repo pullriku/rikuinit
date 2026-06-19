@@ -11,7 +11,7 @@ COPY src ./src
 RUN cargo build --release
 
 
-FROM ubuntu:latest
+FROM ubuntu:24.04
 
 COPY --from=builder /app/target/x86_64-unknown-linux-musl/release/rikuinit /rikuinit
 
