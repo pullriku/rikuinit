@@ -1,0 +1,6 @@
+services:
+  rikuinit:
+    build: .
+    stdin_open: true
+    tty: true
+    init: false
